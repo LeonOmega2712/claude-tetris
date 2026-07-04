@@ -173,6 +173,113 @@ body {
   transform: translateX(18px);
 }
 
+/* ---- Tabla de puntuaciones ---- */
+.leaderboard-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+}
+
+.leaderboard-entry {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--controls-fg);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.leaderboard-entry.highlight {
+  background: var(--switch-fg);
+  color: var(--restart-fg);
+  font-weight: 700;
+}
+
+.leaderboard-empty {
+  color: var(--controls-fg);
+  font-size: 11px;
+}
+
+.lb-rank {
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.lb-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leaderboard-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--controls-fg);
+}
+
+.leaderboard-stats strong {
+  color: var(--accent);
+}
+
+#reset-scores-btn {
+  background: transparent;
+  color: var(--controls-fg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.15s, color 0.15s;
+}
+
+#reset-scores-btn:hover {
+  background: var(--kbd-bg);
+  color: var(--fg);
+}
+
+/* ---- Entrada de nombre (game over) ---- */
+.name-entry {
+  display: flex;
+  gap: 8px;
+}
+
+.name-entry.hidden {
+  display: none;
+}
+
+#name-input {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--kbd-border);
+  background: var(--kbd-bg);
+  color: var(--fg);
+}
+
+#save-score-btn {
+  background: var(--restart-bg);
+  color: var(--restart-fg);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#save-score-btn:hover {
+  background: var(--restart-hover);
+}
+
 /* ---- Controles ---- */
 .controls ul {
   list-style: none;
