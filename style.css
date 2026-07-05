@@ -323,3 +323,78 @@ kbd {
   align-items: center;
   gap: 6px;
 }
+
+/* ---- Panel de records ---- */
+.records-panel {
+  width: 180px;
+}
+
+.records-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+.records-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--fg);
+}
+
+.records-list li.empty {
+  color: var(--label-color);
+  justify-content: center;
+}
+
+.records-list li.highlight {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.rec-name {
+  text-transform: uppercase;
+}
+
+.reset-btn {
+  background: transparent;
+  border: 1px solid var(--board-border);
+  color: var(--controls-fg);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.reset-btn:hover {
+  background: var(--kbd-bg);
+  color: var(--fg);
+}
+
+/* ---- Entrada de nombre en overlay ---- */
+.name-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.name-entry.hidden {
+  display: none;
+}
+
+#player-name {
+  background: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  color: var(--fg);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  text-align: center;
+  width: 140px;
+}

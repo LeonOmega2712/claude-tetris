@@ -50,12 +50,35 @@
           </ul>
         </div>
       </aside>
+
+      <aside class="panel records-panel">
+        <div class="panel-section">
+          <span class="label">RECORDS</span>
+          <ol id="records-list" class="records-list"></ol>
+        </div>
+        <div class="panel-section">
+          <span class="label">MEJOR COMBO</span>
+          <span class="value" id="best-combo">0</span>
+        </div>
+        <div class="panel-section">
+          <span class="label">MÁX. LÍNEAS</span>
+          <span class="value" id="max-lines">0</span>
+        </div>
+        <div class="panel-section">
+          <button id="reset-records-btn" class="reset-btn">Resetear records</button>
+        </div>
+      </aside>
     </div>
 
     <div id="overlay" class="overlay hidden">
       <div class="overlay-box" id="gameover-box">
         <p id="overlay-title">GAME OVER</p>
         <p id="overlay-score"></p>
+        <div id="overlay-name-entry" class="name-entry hidden">
+          <span class="label">¡Nuevo récord!</span>
+          <input type="text" id="player-name" maxlength="10" placeholder="Tu nombre" autocomplete="off" />
+          <button id="save-record-btn">Guardar</button>
+        </div>
         <button id="restart-btn">Reiniciar</button>
       </div>
 
