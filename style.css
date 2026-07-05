@@ -173,6 +173,37 @@ body {
   transform: translateX(18px);
 }
 
+#skin-select {
+  background: var(--kbd-bg);
+  color: var(--fg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+/* ---- Skins ---- */
+body.skin-neon {
+  --board-bg: #05050a;
+  --board-border: #00fff2;
+  --grid-line: #0a2020;
+  --accent: #00fff2;
+  --title-shadow: rgba(0, 255, 242, 0.6);
+}
+
+body.skin-pastel {
+  --board-bg: #fdf6f2;
+  --board-border: #f0d9e8;
+  --grid-line: #f5e6ee;
+  --accent: #f0a6c1;
+  --title-shadow: rgba(240, 166, 193, 0.4);
+}
+
+body.skin-pixel {
+  --grid-line: #33333f;
+}
+
 /* ---- Controles ---- */
 .controls ul {
   list-style: none;
